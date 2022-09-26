@@ -31,8 +31,8 @@ def send(message):
     conn.commit()
     for sending in data:
         print(sending)
-        bot.send_message('1581539391', sending)
+        bot.send_message(tk, sending)
     for c in count:
-        bot.send_message('1581539391', c)
+        bot.send_message(tk, c)
 
 bot.infinity_polling()
